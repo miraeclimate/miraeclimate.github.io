@@ -50,7 +50,7 @@ footer .lang {display:none;}
 .bx-viewport{border-width:0;  left: -0;  height: 100%;} 
 .bx-wrapper .bx-viewport{left:0; border-width:0; box-shadow: 0 0 0}
 #continer{width: 100%; height:100%}
-#technology{height:100%}
+#technology{height:200%}
 #technology .box{height: 100%; }
 #technology .t1{height: 100%; padding-top: 170px;background: url(../images/tech_1.jpg) center bottom no-repeat; background-size:cover}
 #technology .t2{height: 100%; padding-top: 170px;background: url(../images/tech_2.jpg) center bottom no-repeat;  background-size:cover}
