@@ -1,15 +1,48 @@
 ---
-layout: default
+layout: posts-layout
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!--article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <!--header class="post-header">
+  <div class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header-->
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+        {% if page.author %} •
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </div>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-</article>
+</article-->
+
+<section id="news-view" class="news-board" itemscope itemtype="http://schema.org/BlogPosting">
+  <h2 class="title">공지사항</h2>
+
+
+  <div class="box">
+    <h3>{{ page.title }}</h3>
+    <div class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%-d %H:%M" }}</time></div>
+    {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+    <div class="cont" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
+
+  <div id="page-go">
+    <dl>
+      <dt><span class="next">다음글</span></dt>
+      <dd><span class="no">다음글이 없습니다.</span></dd>
+    </dl>
+    <dl>
+      <dt><span class="prev">이전글</span></dt>
+      <dd><a href="news/news_2.html">전글 2106신년 공지글이 새롭게 등록되었습니다</a></dd>
+    </dl>
+  </div>
+   <div class="btn-list-area">
+      <a href="/posts.html" class="btn-blue">목록보기</a>
+   </div>
+ </section>
+
+<script src="/js/ui.js"></script>

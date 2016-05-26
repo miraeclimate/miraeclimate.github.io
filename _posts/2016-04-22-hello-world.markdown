@@ -2,7 +2,7 @@
 layout: post
 title:  "둘째 글입니다."
 date:   2016-04-22 13:54:49 +0900
-categories: jekyll update
+categories: news
 ---
 잘 되시죠?
 
