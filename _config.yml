@@ -20,12 +20,9 @@ github_username: miraeclimate
 # Build settings
 markdown: kramdown
 
-gems: [jekyll-paginate, jekyll-paginate-category]
+gems:
+  - jekyll-paginate
 
 # pagination
 paginate: 1
-paginate_file: "posts.html"
-paginate_path: "categories/news/page:num"
-
-category_dir: "categories"
-category_layout: "posts-layout.html"
+paginate_path: "/notice/page:num/"
