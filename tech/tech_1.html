@@ -1,0 +1,128 @@
+---
+layout: posts-layout
+---
+    <section id="tech-page">
+		<ul id="tech-tab">
+			<li><a href="tech_1.html" class="current">Mirae-WAVE</a></li>
+			<li><a href="tech_2.html">미래날씨</a></li>
+		</ul>
+		<h2>Mirae-WAVE</h2>
+		<p class="msg">
+			기상기후 수치모델 자료, 천리안 위성 자료, GTS관측 자료, 태풍 분석 정보를 열어 지구본 또는 Box 형태의 지도 공간에  3차원으로 데이터를 표출하는 기상기후자료 시각화·분석 환경
+		</p>
+		<h3>개요</h3>
+		<p class="cont">
+			Mirae-WAVE는 기상수치모델자료와 같은 대용량 데이터 세트를 3차원으로 시각화하는 Windows 기반 시스템으로 기존 2D 기반의 분석 차트에 비해 직관적이면서도 실제 대기구조를 표현하는데 뛰어납니다. 대화형 인터페이스를 통해 지구본 또는 Box 공간 위에 기상기후자료 시각화에 필요한 다양한 차트를 중첩하여 표출하며, 분석 이미지를 저장하거나, 회전 · 시간 · 고도에 따른 변화를 동영상으로 저장할 수 있습니다. <br >
+			기상청(KMA) 선진예보시스템에서 많은 연구자들과 예보관들이 수치모델자료 분석과 예보 분석을 위해 Mirae-WAVE의 또다른 버전인 Gloview를 사용하고 있습니다.
+		</p>
+		<div class="select-box">
+			<select name="" id="">
+				<option value="">MIRAE WAVE Community Edition</option>
+			</select>
+			<a href="#" class="download">다운로드</a>
+		</div>
+
+		<div class="view">
+			<div class="list">
+				<h4>버전 정보</h4>
+				<ol>
+					<li>Grib file, nc file 형식 지원</li>
+					<li>변수 그루핑, 필터링 기능</li>
+					<li>평면도·연직단면도·흐름도·연직흐름도·3D Iso-surface·3D Streamline 차트 및 중첩 기능</li>
+					<li>시간 탐색, 고도 탐색, 자동 재생 기능</li>
+					<li>좌표계 변환( Globe <-> Box ), 육지·해상 마스킹, 조명·시점·원근변환 기능</li>
+					<li>레이어 속성·색상 테이블 사용자정의, 설정 저장하기·불러오기 기능</li>
+					<li>이미지·동영상 저장 기능</li>
+				</ol>
+			</div>
+			<div class="list">
+				<h4>최소요구사양</h4>
+				<ol>
+					<li>Window 7 32-bit</li>
+					<li>Processor 2GHz 이상</li>
+					<li>Memory 2GB 이상</li>
+					<li>512MB 이상 3D video card</li>
+				</ol>
+			</div>
+		</div>
+		<div class="swiper">
+			<ol>
+				<li><img src="../images/tech_temp_1.gif" alt=""></li>
+				<li><img src="../images/tech_temp_2.gif" alt=""></li>
+				<li><img src="../images/tech_temp_3.gif" alt=""></li>
+			</ol>
+		</div>
+		<div class="pic">
+			<strong>기상기후3차원 가시화 프로그램 화면 </strong>
+			<ul class="list-1 cl">
+				<li><img src="../images/tech_2_1.jpg" alt=""></li>
+				<li><img src="../images/tech_2_2.jpg" alt=""></li>
+				<li><img src="../images/tech_2_3.jpg" alt=""></li>
+				<li><img src="../images/tech_2_4.jpg" alt=""></li>
+			</ul>
+			<ul class="list-2 cl">
+				<li><a href="https://www.youtube.com/embed/w4EUr2HxvAw" class="youtube"   >
+						<img src="../images/tech_3_1.jpg" alt="">
+						<span>샙플 케이스 2013년 5월 27일</span>
+					</a>
+				</li>
+				<li><a href="https://www.youtube.com/embed/-kkJTX5OMxQ" class="youtube"  >
+						<img src="../images/tech_3_2.jpg" alt="">
+						<span>태양 광 및 온도에 대한 분석 (ERA-중간 데이터, 1979년 2월 24일)</span>
+					</a>
+				</li>
+				<li><a href="" target="_blank">
+						<img src="../images/tech_3_3.jpg" alt="">
+						<span>KMet3D를 사용하여 분석 스냅 샷</span>
+					</a>
+				</li>
+				<li><a href="/site1/move/sp.mp4" target="_blank">
+						<img src="../images/tech_3_4.jpg" alt="">
+						<span>강수+바람_glow효과_수평</span>
+					</a>
+				</li>
+				<li><a href="/site1/move/yj.mp4" class="target">
+						<img src="../images/tech_3_5.jpg" alt="">
+						<span>강수+바람_glow효과_연직</span>
+					</a>
+				</li>
+				<li><a href="/site1/move/cloud.mp4" class="target">
+						<img src="../images/tech_3_6.jpg" alt="">
+						<span>강수+바람_glow효과+구름</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div id="youtubeWrap"  >
+		<iframe  src="" frameborder="0" allowfullscreen></iframe>
+		<span class="close"></span>
+	</div>
+
+<script>
+		 $('.swiper ol').bxSlider({
+			auto: true,
+			autoHover:true,
+			pause:5000
+		});
+		//슬라이드 추가 , 삭제시 tech_slider.reloadSlider(); 재로딩...
+		//ex) http://bxslider.com/examples/reload-slider
+		$('a.youtube').click(function(){
+			$('body').append('<div class="mask"></div');
+			$('#youtubeWrap iframe').attr('src',$(this).attr('href'));
+			$('#youtubeWrap').show();
+			return false;
+		});
+		$('#youtubeWrap .close').click(function(){
+				$('#youtubeWrap').hide();
+				$('#youtubeWrap iframe').attr('src','');
+				$('.mask').remove();
+		});
+</script>
+	<a href="#" class="top-move"><span class="hide">TOP</span>	</a>
+	<script src="/js/ui.js"></script>
+
+ 	<!--[if lt IE 9]>
+	<script src="../js/html5.js"></script>
+	<script src="../js/Respond.min.js"></script>
+	<![endif]-->

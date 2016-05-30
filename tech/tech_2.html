@@ -1,0 +1,35 @@
+---
+layout: posts-layout
+---
+    <section id="tech-page"  style="max-width:none; padding-left:0; padding-right:0">
+		<ul id="tech-tab">
+			<li><a href="tech_1.html">Mirae-WAVE</a></li>
+			<li><a href="tech_2.html" class="current">미래날씨</a></li>
+		</ul>
+		<h2>미래날씨 앱</h2>
+		<p class="msg">
+			캘린더와 날씨가 융합된 지능형 날씨알림 앱
+		</p>
+		<div id="wave">
+			<div class="text">
+				<p class="hide">내가 원하는 그날, 그곳의 날씨를 알려주는 스마트한 앱! 예보가 달라지면 알려주는 친절한 앱 ! 지금 바로 미래 날씨를 사용 해 보세요.</p>
+				<a href="https://play.google.com/store/apps/details?id=com.miraeclimate.miraeweather" target="_blank" class="btn"><img src="/images/btn_store.gif" alt="Play Store 가기" class="m"></a>
+			</div>
+			<div class="box">
+				<img src="/images/wave_cont.jpg" alt="" class="m">
+			</div>
+		</div>
+	</section>
+	<script>
+		$(window).on('load resize',function(){
+			if($(window).width()<768){
+				$('#wave .text').height($(window).width()*1.5)
+			}
+		});
+	</script>
+	<a href="#" class="top-move"><span class="hide">TOP</span>	</a>
+	<script src="/js/ui.js"></script>
+ 	<!--[if lt IE 9]>
+	<script src="/kor/js/html5.js"></script>
+	<script src="/kor/js/Respond.min.js"></script>
+	<![endif]-->
